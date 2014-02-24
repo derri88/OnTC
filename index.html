@@ -1,0 +1,22 @@
+---
+layout: default
+title: Your New Jekyll Site
+---
+
+<div id="home">
+    <h1>Blog Posts</h1>
+    <ul class="posts">
+        {% for post in site.posts %}
+        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+    </ul>
+    <!-- Pobranie obiektu i zapisanie do lokalnej zmiennej -->
+    {% assign doxObj = '69D90D95-5B41-4E2C-AC73-12C2543AC952' | get_dox_by_id %}
+    <!-- Pobranie atrybutów obiektu -->
+    Id: {{ doxObj['id'] }} <br />
+    Name: {{ doxObj['name'] }} <br />
+    URL: {{ doxObj['url'] }} <br />
+    <!-- Użycie atrybutu obiektu w filtrze -->
+    {{ doxObj['id'] | show_as_named_link | upcase}}
+
+</div>
