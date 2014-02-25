@@ -1,0 +1,23 @@
+--- 
+#####    begin of YAML DoxHeader  (ResourceFork)
+ 
+DoxID:  	02A9FD01-E17B-43D1-B1F5-8F232B4BCEAF
+DoxType:	DoxType_customer
+DoxFile:	customer_12.dox
+DoxPK:  	12
+DoxName:   customer_12
+DoxVPath:  customer:Active
+DoxURL:  http://127.0.0.1:4000/customer_12.html
+ 
+DoxThumbnailFile:  customer_12_thumb.jpg
+DoxBodyType: markdown
+ 
+ 
+#####       begin of DoxBody - (DataFork)
+ 
+---
+Jestem sobie  **customer** o numerze __ 02A9FD01-E17B-43D1-B1F5-8F232B4BCEAF __ i nazywam sie customer_12
+
+link do mnie to http://127.0.0.1:4000/customer_12.html
+
+

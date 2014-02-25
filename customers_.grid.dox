@@ -1,0 +1,14 @@
+--- 
+#####    begin of YAML DoxHeader  (ResourceFork)
+ 
+DoxID:  	50094DA8-90D6-41AA-9A8E-0741356E650E
+DoxType:	DoxType_RCList
+DoxFile:	customers_.grids.dox
+DoxName:   customers_.grid
+ 
+DoxBodyType: CSV
+ 
+#####       begin of DoxBody - (DataFork)
+ 
+---
+{{ 'D4BB7F1C-83E3-4DDD-A3C8-79BE53C35483' | show_as_named_link | upcase}}
