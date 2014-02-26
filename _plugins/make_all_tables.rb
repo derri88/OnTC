@@ -61,7 +61,6 @@ module Jekyll
       @Menu += "<ul class=\"#{@Theme.data['MenuHeader']}\">"
       @context.registers[:site].pages.each do |page|
         if page.data['DoxType'] == "DoxType_RCList"
-          @Menu += @PageBegin
           @Menu +="
           <li>
           <a href=\"#{page.data['DoxName']}.html\">

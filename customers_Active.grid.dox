@@ -1,0 +1,16 @@
+--- 
+#####    begin of YAML DoxHeader  (ResourceFork)
+ 
+DoxID:  	7fdc7bf3-2c9a-4f63-adc9-2bdcc9f440dc
+DoxType:	DoxType_RCList
+DoxFile:	customers_Active.grids.dox
+DoxName:   customers_Active.grid
+ 
+DoxBodyType: CSV
+ 
+#####       begin of DoxBody - (DataFork)
+ 
+---
+customer11 , Active , Jestem sobie customers o numerze  {{ '59248083-9E78-4EC6-8CC2-9C5226CC557D' | show_as_named_link }}  i nazywam sie customer11 , http://127.0.0.1:4000/customer11.html
+customer12 , Active , Jestem sobie customers o numerze  02A9FD01-E17B-43D1-B1F5-8F232B4BCEAF  i nazywam sie customer12 , http://127.0.0.1:4000/customer12.html
+customer13 , Active , Jestem sobie customers o numerze  6BFDA08D-C7E5-4D4D-A95F-4DC6724B1174  i nazywam sie customer13 , http://127.0.0.1:4000/customer13.html
