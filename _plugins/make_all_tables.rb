@@ -95,6 +95,7 @@ module Jekyll
               @Header += @HeaderBegin
               @Header += "Column#{i}"
               @Header += @HeaderEnd
+              i += 1
             end
             break
           end
