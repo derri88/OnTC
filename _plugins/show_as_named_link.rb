@@ -14,11 +14,11 @@ module Jekyll
       end
       if @DoxUrl.length > 0
         %|
-          <div id="question-header">
-            <h1 itemprop="name">
-              <a href="#{@DoxUrl}" class="question-hyperlink">#{@DoxName}</a>
-            </h1>
-          </div>|
+<div id="question-header">
+  <h1 itemprop="name">
+  <a href="#{@DoxUrl}" class="question-hyperlink">#{@DoxName}</a>
+  </h1>
+</div>|
       end
     end
   end
