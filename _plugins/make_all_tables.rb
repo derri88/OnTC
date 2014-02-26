@@ -61,6 +61,11 @@ module Jekyll
       @RowEnd = "</tr>"
       @ColumnBegin = "<td>"
       @ColumnEnd = "</td>"
+      @TableHeaderBegin = "<thead>"
+      @TableHeaderEnd = "</thead>"
+      @HeaderBegin = "<th>"
+      @HeaderEnd = "</th>"
+      @Header = ""
       #Table variables ---End
       @Menu += @MenuBegin
       @Menu += "<ul class=\"#{@Theme.data['MenuHeader']}\">"
@@ -83,9 +88,23 @@ module Jekyll
         #if page.data['DoxID'] == input
 
         if page.data['DoxType'] == "DoxType_RCList"
+          #Prepare header
+          i = 0
+          CSV.parse(page.content) do |row|
+            for cell in row
+              @Header += @HeaderBegin
+              @Header += "Column#{i}"
+              @Header += @HeaderEnd
+            end
+            break
+          end
+
           @Page += @PageBegin
           @Page += @Menu
           @Page += @TableBegin
+          @Page += @TableHeaderBegin
+          @Page += @Header
+          @Page += @TableHeaderEnd
           @Page += @TableContentBegin
           CSV.parse(page.content) do |row|
             @Page += @RowBegin
@@ -101,6 +120,7 @@ module Jekyll
           @Page += @PageEnd
           page.output = @Page
           @Page = ""
+          @Header = ""
         end
       end
       return ""
