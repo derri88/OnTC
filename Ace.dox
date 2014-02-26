@@ -6,6 +6,9 @@ MenuHeader: nav nav-list
 MenuIcon: icon-dashboard
 MenuText: menu-text
 
+TableMain: table-responsive
+TableSub: table table-striped table-bordered table-hover
+
 #####       CSS
 
 ---
